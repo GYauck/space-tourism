@@ -22,7 +22,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className='navText'>
-          <Link>
+          <Link to={"destination"}>
           01 DESTINATION
           </Link>
         </li>

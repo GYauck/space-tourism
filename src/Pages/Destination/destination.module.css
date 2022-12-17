@@ -1,0 +1,97 @@
+.background {
+    background-image: url("/src/assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.destinationContainer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+    
+}
+
+
+/* Left side */
+
+.titleContainer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+}
+
+.title {
+    color: rgb(98, 89, 86);
+}
+
+.titleSpan {
+    color: white;
+}
+
+.planetImg {
+    width: 445px;
+    height: 445px;
+}
+
+
+/*  Right side */
+
+.rigthContainer {
+
+}
+
+
+.ulNav {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    height: min-content;
+}
+
+.ulButton {
+    background: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Barlow Condensed';
+    
+}
+
+.planetName {
+    font-size: 100px;
+    color: white;
+    font-family: 'Bellefair';
+    font-weight: lighter;
+
+}
+
+.pDescription {
+    color: white;
+    width: 50%;
+}
+
+.ulBottom {
+    display: flex;
+    list-style: none;
+    gap: 5vh;
+}
+
+.liDistance {
+    color: white;
+    font-size: 14px;
+    font-family: 'Barlow Condensed';
+}
+
+.liTravel {
+    color: white;
+    font-size: 14px;
+    font-family: 'Barlow Condensed';
+}
+
+.spanBottom {
+    font-size: 28px;
+    font-family: 'Bellefair';
+}

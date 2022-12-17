@@ -5,6 +5,7 @@ import "./home.css"
 const Home = () => {
   return (
     <>
+    <div className='background-home'>
     <Navbar/>
     <div className='homeContainer'>
       <div className='cardContainer'>
@@ -15,6 +16,7 @@ const Home = () => {
       <div className='exploreCircle'>
         EXPLORE
       </div>
+    </div>
     </div>
     </>
   )
