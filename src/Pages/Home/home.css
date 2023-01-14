@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.background-home {
+    background-image: url("/src/assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.homeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15%;
+    
+}
+
+.cardContainer {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.heading-5 {
+    font-family: 'Barlow Condensed';
+    color: #D0D6F9;
+    font-size: 28px;
+    font-weight: lighter;
+    
+}
+
+.heading-1 {
+    font-family: 'Barlow Condensed';
+    color: #FFFFFF;
+    font-size: 150px;
+    font-weight: lighter;
+    margin: 0;
+
+}
+
+.body-text {
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    color: #D0D6F9;
+    
+}
+
+.exploreCircle {
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    font-size: 36px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+}
