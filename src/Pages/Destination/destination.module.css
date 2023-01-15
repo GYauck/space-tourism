@@ -1,0 +1,114 @@
+.background {
+    background-image: url("/src/assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.fullContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+/* Left side */
+.leftContainer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+    
+}
+
+.titleContainer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+}
+
+.title {
+    color: rgb(98, 89, 86);
+}
+
+.titleSpan {
+    color: white;
+}
+
+.planetImg {
+    width: 445px;
+    height: 445px;
+}
+
+
+/*  Right side */
+
+.rigthContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.ulNav {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    height: min-content;
+    padding-left: 0px;
+}
+
+.ulButton {
+    background: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Barlow Condensed';
+    border: none;
+    
+}
+
+.planetName {
+    font-size: 100px;
+    color: white;
+    font-family: 'Bellefair';
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+.pDescription {
+    color: white;
+    width: 50%;
+}
+
+.ulBottom {
+    display: flex;
+    list-style: none;
+    gap: 5vh;
+    padding-left: 0px;
+    
+}
+
+.liDistance {
+    color: white;
+    font-size: 14px;
+    font-family: 'Barlow Condensed';
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.liTravel {
+    color: white;
+    font-size: 14px;
+    font-family: 'Barlow Condensed';
+    width: 14%;
+}
+
+.spanBottom {
+    font-size: 28px;
+    font-family: 'Bellefair';
+    
+}
