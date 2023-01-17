@@ -4,21 +4,19 @@ import style from "./destination.module.css";
 import data from "../../data.json";
 
 const Destination = () => {
+
+
   const [planets] = useState(data.destinations);
-
-  //console.log(planets[0].images.webp)
-
   const [value, setValue] = useState(0);
   const [isActive, setActive] = useState();
   const { name, images, description, distance, travel } = planets[value];
 
   const handleClick = (event) => {
     event.preventDefault();
-    console.log(event.target.id)
+    console.log(event.target.id);
     setActive(event.target.id);
-  }
+  };
 
-  
   return (
     <div className={style.background}>
       <Navbar />
@@ -28,17 +26,20 @@ const Destination = () => {
             <h2 className={style.title}>
               01 <span className={style.titleSpan}>PICK YOUR DESTINATION</span>{" "}
             </h2>
-            <img className={style.planetImg} src={images.png} alt="image" />
+            <img className={style.planetImg} src={images.png} alt="PlanetImg" />
           </div>
-          <div className={style.rigthContainer}>
+          <div className={style.rightContainer}>
             <ul className={style.ulNav}>
               {planets.map((planet, index) => (
                 <li key={index}>
-                  <button id={index}
-                    className={isActive == index ? style.activeButtom : style.ulButton}
+                  <button
+                    id={index}
+                    className={
+                      isActive == index ? style.activeButtom : style.ulButton
+                    }
                     onClick={(e) => {
-                      handleClick(e)
-                      setValue(index)
+                      handleClick(e);
+                      setValue(index);
                     }}
                   >
                     {planet.name.toUpperCase()}
@@ -52,11 +53,15 @@ const Destination = () => {
             <ul className={style.ulDescription}>
               <li className={style.liDistance}>
                 <span>AVG. DISTANCE</span>{" "}
-                <span className={style.spanDescription}>{distance}</span>
+                <span className={style.spanDescription}>
+                  {distance.toUpperCase()}
+                </span>
               </li>
               <li className={style.liTravel}>
                 EST. TRAVEL TIME{" "}
-                <span className={style.spanDescription}>{travel.toUpperCase()}</span>
+                <span className={style.spanDescription}>
+                  {travel.toUpperCase()}
+                </span>
               </li>
             </ul>
           </div>

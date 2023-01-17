@@ -1,0 +1,52 @@
+.background {
+    background-image: url("/src/assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.fullContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.title {
+    color: rgb(98, 89, 86);
+}
+
+.titleSpan {
+    color: white;
+    font-weight: lighter;
+}
+
+.role {
+    color: rgb(98, 89, 86);
+    font-size: 32px;
+    font-weight: lighter;
+    font-family: 'Bellefair', serif;
+}
+
+.name {
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: lighter;
+    font-family: 'Bellefair', serif;
+}
+
+.bio {
+    color: #D0D6F9;
+
+}
+
+
+.rightContainer {
+    
+}

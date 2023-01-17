@@ -17,8 +17,6 @@
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    
-    
 }
 
 .titleContainer {
@@ -46,7 +44,7 @@
 
 /*  Right side */
 
-.rigthContainer {
+.rightContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +64,7 @@
     background: none;
     color: white;
     font-size: 16px;
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed', sans-serif;
     border: none;
     
 }
@@ -75,7 +73,7 @@
     background: none;
     color: white;
     font-size: 16px;
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed', sans-serif;
     border: none;
     border-bottom: 3px solid white;
 }
@@ -88,7 +86,7 @@
 .planetName {
     font-size: 100px;
     color: white;
-    font-family: 'Bellefair';
+    font-family: 'Bellefair', serif;
     font-weight: lighter;
     margin-top: 30px;
 }
@@ -109,7 +107,7 @@
 .liDistance {
     color: white;
     font-size: 14px;
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed', sans-serif;
     display: flex;
     flex-direction: column;
     
@@ -120,12 +118,12 @@
     flex-direction: column;
     color: white;
     font-size: 14px;
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed', sans-serif;
     width: 18%;
 }
 
 .spanDescription {
     font-size: 28px;
-    font-family: 'Bellefair';
+    font-family: 'Bellefair', serif;
     
 }
