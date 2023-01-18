@@ -8,7 +8,7 @@ const Destination = () => {
 
   const [planets] = useState(data.destinations);
   const [value, setValue] = useState(0);
-  const [isActive, setActive] = useState();
+  const [isActive, setActive] = useState(0);
   const { name, images, description, distance, travel } = planets[value];
 
   const handleClick = (event) => {

@@ -7,19 +7,24 @@
 
 .fullContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 10vh;
+    
 }
 
 .leftContainer {
     display: flex;
     flex-direction: column;
     width: 50%;
+    margin-left: 300px;
+    
+    
+
 }
 
 .title {
     color: rgb(98, 89, 86);
+    width: fit-content;
 }
 
 .titleSpan {
@@ -32,6 +37,7 @@
     font-size: 32px;
     font-weight: lighter;
     font-family: 'Bellefair', serif;
+    width: fit-content;
 }
 
 .name {
@@ -39,14 +45,50 @@
     font-size: 56px;
     font-weight: lighter;
     font-family: 'Bellefair', serif;
+    width: fit-content;
 }
 
 .bio {
     color: #D0D6F9;
+    width: 50%;
 
 }
 
+.ulNav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
-.rightContainer {
+.ulButton {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: rgb(79, 79, 79);
+    border: none;
     
 }
+
+.ulButton:hover {
+    background-color: grey;
+}
+
+.activeButtom {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+    
+    
+}
+
+
+
+
+/* Right side */
+.rightContainer {
+    width: 50%;
+    display: flex;
+}
+
