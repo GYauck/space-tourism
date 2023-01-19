@@ -1,0 +1,91 @@
+.background {
+  background-image: url("/src/assets/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.fullContainer {
+  display: flex;
+  /* align-items: center; */
+  margin-top: 10vh;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 300px;
+}
+
+.title {
+  color: rgb(98, 89, 86);
+  width: fit-content;
+}
+
+.titleSpan {
+  color: white;
+  font-weight: lighter;
+}
+
+.ulAndContent {
+  display: flex;
+}
+
+.nameAndDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.subTitle {
+  color: rgb(98, 89, 86);
+  font-size: 32px;
+  font-weight: lighter;
+  font-family: "Bellefair", serif;
+  width: fit-content;
+}
+
+.name {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: lighter;
+  font-family: "Bellefair", serif;
+  width: fit-content;
+}
+
+.description {
+  color: #d0d6f9;
+  width: 50%;
+}
+
+.ulNav {
+  width: fit-content;
+  list-style: none;
+  gap: 20px;
+}
+
+.ulButton {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: rgb(79, 79, 79);
+  border: none;
+}
+
+.ulButton:hover {
+  background-color: grey;
+}
+
+.activeButtom {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: white;
+  border: none;
+}
+
+/* Right side */
+.rightContainer {
+  width: 50%;
+  display: flex;
+}
