@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-left: 300px;
+  margin-left: 20vh;
 }
 
 .title {
@@ -35,45 +35,63 @@
 .nameAndDescriptionContainer {
   display: flex;
   flex-direction: column;
+  margin-left: 10vh;
+  width: 500px;
+  height: 271px;
+  left: 325px;
+  top: 383px;
+  
 }
 
 .subTitle {
   color: rgb(98, 89, 86);
-  font-size: 32px;
+  font-size: 16px;
   font-weight: lighter;
   font-family: "Bellefair", serif;
-  width: fit-content;
+  
 }
 
 .name {
   color: #ffffff;
-  font-size: 56px;
+  font-size: 46px;
   font-weight: lighter;
   font-family: "Bellefair", serif;
-  width: fit-content;
+  margin: 0px;
+  
 }
 
 .description {
   color: #d0d6f9;
-  width: 50%;
+  letter-spacing: 2.7px;
+  line-height: 1.5;
+  
 }
 
 .ulNav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  align-items: flex-end;
   width: fit-content;
   list-style: none;
-  gap: 20px;
+  gap: 30px;
 }
 
 .ulButton {
   width: 80px;
   height: 80px;
   border-radius: 40px;
-  background-color: rgb(79, 79, 79);
-  border: none;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  border-color: grey;
+  font-size: 36px;
+  font-family: "Bellefair", serif;
+  color: white;
 }
 
 .ulButton:hover {
-  background-color: grey;
+  border-color: white;
 }
 
 .activeButtom {
@@ -82,6 +100,9 @@
   border-radius: 40px;
   background-color: white;
   border: none;
+  font-size: 36px;
+  font-family: "Bellefair", serif;
+  color: black;
 }
 
 /* Right side */
