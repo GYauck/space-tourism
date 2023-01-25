@@ -9,6 +9,9 @@
     display: flex;
     /* align-items: center; */
     margin-top: 10vh;
+    position: fixed;
+    bottom: 0;
+    height: 712px;
     
 }
 

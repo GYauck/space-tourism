@@ -4,8 +4,6 @@ import style from "./destination.module.css";
 import data from "../../data.json";
 
 const Destination = () => {
-
-
   const [planets] = useState(data.destinations);
   const [value, setValue] = useState(0);
   const [isActive, setActive] = useState(0);
@@ -28,43 +26,43 @@ const Destination = () => {
             </h2>
             <img className={style.planetImg} src={images.png} alt="PlanetImg" />
           </div>
-          <div className={style.rightContainer}>
-            <ul className={style.ulNav}>
-              {planets.map((planet, index) => (
-                <li key={index}>
-                  <button
-                    id={index}
-                    className={
-                      isActive == index ? style.activeButtom : style.ulButton
-                    }
-                    onClick={(e) => {
-                      handleClick(e);
-                      setValue(index);
-                    }}
-                  >
-                    {planet.name.toUpperCase()}
-                  </button>
-                </li>
-              ))}
-            </ul>
-            <h2 className={style.planetName}>{name}</h2>
-            <p className={style.pDescription}>{description}</p>
-            {/* <hr /> */}
-            <ul className={style.ulDescription}>
-              <li className={style.liDistance}>
-                <span>AVG. DISTANCE</span>{" "}
-                <span className={style.spanDescription}>
-                  {distance.toUpperCase()}
-                </span>
+        </div>
+        <div className={style.rightContainer}>
+          <ul className={style.ulNav}>
+            {planets.map((planet, index) => (
+              <li key={index}>
+                <button
+                  id={index}
+                  className={
+                    isActive == index ? style.activeButtom : style.ulButton
+                  }
+                  onClick={(e) => {
+                    handleClick(e);
+                    setValue(index);
+                  }}
+                >
+                  {planet.name.toUpperCase()}
+                </button>
               </li>
-              <li className={style.liTravel}>
-                EST. TRAVEL TIME{" "}
-                <span className={style.spanDescription}>
-                  {travel.toUpperCase()}
-                </span>
-              </li>
-            </ul>
-          </div>
+            ))}
+          </ul>
+          <h2 className={style.planetName}>{name.toUpperCase()}</h2>
+          <p className={style.pDescription}>{description}</p>
+          {/* <hr /> */}
+          <ul className={style.ulDescription}>
+            <li className={style.liDistance}>
+              <span>AVG. DISTANCE</span>{" "}
+              <span className={style.spanDescription}>
+                {distance.toUpperCase()}
+              </span>
+            </li>
+            <li className={style.liTravel}>
+              EST. TRAVEL TIME{" "}
+              <span className={style.spanDescription}>
+                {travel.toUpperCase()}
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
