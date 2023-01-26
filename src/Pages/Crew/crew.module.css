@@ -36,11 +36,13 @@
 }
 
 .role {
-    color: rgb(98, 89, 86);
+    color: rgb(132, 124, 122);
     font-size: 32px;
     font-weight: lighter;
     font-family: 'Bellefair', serif;
     width: fit-content;
+    margin-top: 10vh;
+    margin-bottom: 1vh;
 }
 
 .name {
@@ -49,11 +51,16 @@
     font-weight: lighter;
     font-family: 'Bellefair', serif;
     width: fit-content;
+    margin-top: 0;
+    margin-bottom: 4vh;
 }
 
 .bio {
     color: #D0D6F9;
     width: 50%;
+    height: 140px;
+    line-height: 1.5;
+    margin: 0;
 
 }
 

@@ -21,7 +21,7 @@ const Technology = () => {
       <div className={style.fullContainer}>
         <div className={style.leftContainer}>
           <h1 className={style.title}>
-            03 <span className={style.titleSpan}> SPACE LAUNCH 101</span>
+            03 <span className={style.titleSpan}>SPACE LAUNCH 101</span>
           </h1>
           <div className={style.ulAndContent}>
             <ul className={style.ulNav}>
@@ -44,7 +44,7 @@ const Technology = () => {
             </ul>
 
             <div className={style.nameAndDescriptionContainer}>
-              <h2 className={style.subTitle}>THE TERMINOLOGY</h2>
+              <h2 className={style.subTitle}>THE TERMINOLOGY...</h2>
               <h3 className={style.name}>{name.toUpperCase()}</h3>
               <p className={style.description}>{description}</p>
             </div>

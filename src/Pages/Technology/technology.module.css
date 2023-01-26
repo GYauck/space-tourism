@@ -21,6 +21,8 @@
 .title {
   color: rgb(98, 89, 86);
   width: fit-content;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
 }
 
 .titleSpan {
@@ -40,20 +42,22 @@
   height: 271px;
   left: 325px;
   top: 383px;
+  margin-top: 10vh;
   
 }
 
 .subTitle {
-  color: rgb(98, 89, 86);
+  color: #d0d6f9;
   font-size: 16px;
   font-weight: lighter;
-  font-family: "Bellefair", serif;
+  letter-spacing: 2.7px;
+  font-family: 'Barlow Condensed', sans-serif;
   
 }
 
 .name {
   color: #ffffff;
-  font-size: 46px;
+  font-size: 56px;
   font-weight: lighter;
   font-family: "Bellefair", serif;
   margin: 0px;
@@ -75,6 +79,7 @@
   width: fit-content;
   list-style: none;
   gap: 30px;
+  margin-top: 10vh;
 }
 
 .ulButton {
@@ -85,7 +90,7 @@
   border-width: 1px;
   background-color: transparent;
   border-color: grey;
-  font-size: 36px;
+  font-size: 26px;
   font-family: "Bellefair", serif;
   color: white;
 }
@@ -100,7 +105,7 @@
   border-radius: 40px;
   background-color: white;
   border: none;
-  font-size: 36px;
+  font-size: 26px;
   font-family: "Bellefair", serif;
   color: black;
 }
@@ -109,4 +114,5 @@
 .rightContainer {
   width: 50%;
   display: flex;
+  margin-left: 20vw;
 }
