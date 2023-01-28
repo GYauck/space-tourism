@@ -1,133 +1,173 @@
 .background {
-    background-image: url("/src/assets/destination/background-destination-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+  background-image: url("/src/assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .fullContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
 }
 
 /* Left side */
 .leftContainer {
-    margin-right: 5vw;
-    width: 30vw;
-    
-    
+  margin-right: 5vw;
+  width: 30vw;
 }
 
 .titleContainer {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .title {
-    color: rgb(98, 89, 86);
+  color: rgb(98, 89, 86);
 }
 
 .titleSpan {
-    color: white;
-    font-weight: lighter;
+  color: white;
+  font-weight: lighter;
 }
 
 .planetImg {
-    width: 445px;
-    height: 445px;
+  width: 445px;
+  height: 445px;
 }
-
 
 /*  Right side */
 
 .rightContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 445px;
-    height: 472px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 445px;
+  height: 472px;
 }
 
-
 .ulNav {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    padding-left: 0px;
-    margin-top: 0px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-left: 0px;
+  margin-top: 0px;
 }
 
 .ulButton {
-    background: none;
-    color: white;
-    font-size: 16px;
-    font-family: 'Barlow Condensed', sans-serif;
-    border: none;
-    
+  background: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  border: none;
 }
 
 .activeButtom {
-    background: none;
-    color: white;
-    font-size: 16px;
-    font-family: 'Barlow Condensed', sans-serif;
-    border: none;
-    border-bottom: 3px solid white;
+  background: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  border: none;
+  border-bottom: 3px solid white;
 }
 
 .ulButton:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, 0.426);
-    
+  border-bottom: 3px solid rgba(255, 255, 255, 0.426);
 }
 
 .planetName {
-    font-size: 100px;
-    color: white;
-    font-family: 'Bellefair', serif;
-    font-weight: lighter;
-    margin-top: 30px;
+  font-size: 100px;
+  color: white;
+  font-family: "Bellefair", serif;
+  font-weight: lighter;
+  margin-top: 30px;
 }
 
 .pDescription {
-    color: white;
-    height: 72px;
-    width: 445px;
+  color: white;
+  height: 72px;
+  width: 445px;
 }
 
 .ulDescription {
-    display: flex;
-    list-style: none;
-    gap: 5vh;
-    padding-left: 0px;
-        
-    
+  display: flex;
+  list-style: none;
+  gap: 5vh;
+  padding-left: 0px;
 }
 
 .liDistance {
-    color: white;
-    font-size: 14px;
-    font-family: 'Barlow Condensed', sans-serif;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    
+  color: white;
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .liTravel {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 14px;
-    font-family: 'Barlow Condensed', sans-serif;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  width: 50%;
 }
 
 .spanDescription {
-    font-size: 28px;
-    font-family: 'Bellefair', serif;
-    
+  font-size: 28px;
+  font-family: "Bellefair", serif;
+}
+
+/* Responsive  */
+
+/* Tablets  */
+@media only screen and (max-width: 1024px) {
+  .background {
+    background-image: url("/src/assets/destination/background-destination-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+  }
+
+  .fullContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+  }
+
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    margin-right: 400px;
+    width: 50vw;
+  }
+
+  .planetName {
+    margin: 0;
+  }
+
+  .liTravel {
+    width: 20vw;
+  }
+
+  .liDistance {
+    width: 20vw;
+  }
+}
+
+/* Phones  */
+@media only screen and (max-width: 480px) {
 }

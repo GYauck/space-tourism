@@ -1,104 +1,152 @@
 .background {
-    background-image: url("/src/assets/crew/background-crew-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+  background-image: url("/src/assets/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .fullContainer {
-    display: flex;
-    /* align-items: center; */
-    margin-top: 10vh;
-    position: fixed;
-    bottom: 0;
-    height: 712px;
-    
+  display: flex;
+  /* align-items: center; */
+  margin-top: 10vh;
+  position: fixed;
+  bottom: 0;
+  height: 712px;
 }
 
 .leftContainer {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-left: 300px;
-    
-    
-
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 300px;
 }
 
 .title {
-    color: rgb(98, 89, 86);
-    width: fit-content;
+  color: rgb(98, 89, 86);
+  width: fit-content;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .titleSpan {
-    color: white;
-    font-weight: lighter;
+  color: white;
+  font-weight: lighter;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 4.7px;
 }
 
 .role {
-    color: rgb(132, 124, 122);
-    font-size: 32px;
-    font-weight: lighter;
-    font-family: 'Bellefair', serif;
-    width: fit-content;
-    margin-top: 10vh;
-    margin-bottom: 1vh;
+  color: rgb(132, 124, 122);
+  font-size: 32px;
+  font-weight: lighter;
+  font-family: "Bellefair", serif;
+  width: fit-content;
+  margin-top: 10vh;
+  margin-bottom: 1vh;
 }
 
 .name {
-    color: #ffffff;
-    font-size: 56px;
-    font-weight: lighter;
-    font-family: 'Bellefair', serif;
-    width: fit-content;
-    margin-top: 0;
-    margin-bottom: 4vh;
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: lighter;
+  font-family: "Bellefair", serif;
+  width: fit-content;
+  margin-top: 0;
+  margin-bottom: 4vh;
 }
 
 .bio {
-    color: #D0D6F9;
-    width: 50%;
-    height: 140px;
-    line-height: 1.5;
-    margin: 0;
-
+  color: #d0d6f9;
+  width: 50%;
+  height: 140px;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .ulNav {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .ulButton {
-    width: 20px;
-    height: 20px;
-    border-radius: 25px;
-    background-color: rgb(79, 79, 79);
-    border: none;
-    
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  background-color: rgb(79, 79, 79);
+  border: none;
 }
 
 .ulButton:hover {
-    background-color: grey;
+  background-color: grey;
 }
 
 .activeButtom {
-    width: 20px;
-    height: 20px;
-    border-radius: 25px;
-    background-color: white;
-    border: none;
-    
-    
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  background-color: white;
+  border: none;
 }
-
-
-
 
 /* Right side */
 .rightContainer {
-    width: 50%;
-    display: flex;
+  width: 50%;
+  display: flex;
 }
 
+/* Responsive  */
+
+/* Tablets  */
+@media only screen and (max-width: 1024px) {
+  .background {
+    background-image: url("/src/assets/crew/background-crew-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .fullContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+  }
+  
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+
+  .title {
+    margin-right: 400px;
+    width: 300px;
+  }
+
+  .titleSpan {
+    margin-left: 10px;
+  }
+
+  .name {
+    text-align: center; 
+    width: 80vw;
+  }
+
+  .role {
+    margin: 0;
+  }
+
+  .rightContainer {
+    width: 457px;
+    height: 572px;
+    bottom: 0;
+    position: fixed;
+    
+  }
+
+}
+
+/* Phones  */
+@media only screen and (max-width: 480px) {
+}

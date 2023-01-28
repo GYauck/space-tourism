@@ -112,7 +112,8 @@
 
 /* Right side */
 .rightContainer {
-  width: 50%;
+  width: 515px;
+  height: 527px;
   display: flex;
   margin-left: 20vw;
 }

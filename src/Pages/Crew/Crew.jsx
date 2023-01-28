@@ -9,7 +9,6 @@ const Crew = () => {
   const [isActive, setActive] = useState(0);
   const { name, images, role, bio } = crew[value];
 
-
   const handleClick = (event) => {
     event.preventDefault();
     console.log(event.target.id);
@@ -28,23 +27,21 @@ const Crew = () => {
           <h3 className={style.name}>{name.toUpperCase()}</h3>
           <p className={style.bio}>{bio}</p>
           <ul className={style.ulNav}>
-              {crew.map((crew, index) => (
-                <li key={index}>
-                  <button
-                    id={index}
-                    className={
-                      isActive == index ? style.activeButtom : style.ulButton
-                    }
-                    onClick={(e) => {
-                      handleClick(e);
-                      setValue(index);
-                    }}
-                  >
-                    {/* {crew.name.toUpperCase()} */}
-                  </button>
-                </li>
-              ))}
-            </ul>
+            {crew.map((crew, index) => (
+              <li key={index}>
+                <button
+                  id={index}
+                  className={
+                    isActive == index ? style.activeButtom : style.ulButton
+                  }
+                  onClick={(e) => {
+                    handleClick(e);
+                    setValue(index);
+                  }}
+                ></button>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className={style.rightContainer}>
           <img src={images.png} alt="CrewImg" />
