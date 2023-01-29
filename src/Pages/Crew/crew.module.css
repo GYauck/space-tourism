@@ -108,8 +108,10 @@
   .fullContainer {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
     top: 0;
+    
   }
   
   .leftContainer {
@@ -120,6 +122,7 @@
   }
 
   .title {
+    font-size: 26px;
     margin-right: 400px;
     width: 300px;
   }
@@ -128,22 +131,30 @@
     margin-left: 10px;
   }
 
-  .name {
-    text-align: center; 
-    width: 80vw;
-  }
-
   .role {
+    font-size: 26px;
     margin: 0;
   }
 
+  .name {
+    font-size: 36px;
+    text-align: center; 
+    width: 40vw;
+  }
+
+  .bio {
+    width: 350px;
+  }
+
   .rightContainer {
-    width: 457px;
-    height: 572px;
+    width:50%;
+    height: 50%;
     bottom: 0;
     position: fixed;
     
   }
+
+ 
 
 }
 

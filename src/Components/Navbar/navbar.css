@@ -50,6 +50,10 @@ hr {
 /* Responsive  */
 
 @media only screen and (max-width: 1024px) {
+  .navContainer {
+    padding-top: 1vh;
+  }
+
   hr {
     display: none;
   }

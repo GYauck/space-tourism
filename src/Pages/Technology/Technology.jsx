@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import style from "./technology.module.css";
 import data from "../../data.json";
@@ -8,6 +8,20 @@ const Technology = () => {
   const [value, setValue] = useState(0);
   const [isActive, setActive] = useState(0);
   const { name, images, description } = technology[value];
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 1024px)");
+    setIsSmallScreen(mq.matches);
+    mq.addEventListener("change", (e) => {
+      setIsSmallScreen(e.matches);
+    });
+    return () => {
+      mq.removeEventListener("change", (e) => {
+        setIsSmallScreen(e.matches);
+      });
+    };
+  }, []);
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -51,7 +65,11 @@ const Technology = () => {
           </div>
         </div>
         <div className={style.rightContainer}>
-          <img src={images.portrait} alt="TechnologyImg" />
+          {isSmallScreen ? (
+            <img src={images.landscape} alt="TechnologyImg" />
+          ) : (
+            <img src={images.portrait} alt="TechnologyImg" />
+          )}
         </div>
       </div>
     </div>
