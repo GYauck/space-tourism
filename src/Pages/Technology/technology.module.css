@@ -21,7 +21,7 @@
 .title {
   color: rgb(98, 89, 86);
   width: fit-content;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2.7px;
 }
 
@@ -43,7 +43,6 @@
   left: 325px;
   top: 383px;
   margin-top: 10vh;
-  
 }
 
 .subTitle {
@@ -51,8 +50,7 @@
   font-size: 16px;
   font-weight: lighter;
   letter-spacing: 2.7px;
-  font-family: 'Barlow Condensed', sans-serif;
-  
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .name {
@@ -61,14 +59,12 @@
   font-weight: lighter;
   font-family: "Bellefair", serif;
   margin: 0px;
-  
 }
 
 .description {
   color: #d0d6f9;
   letter-spacing: 2.7px;
   line-height: 1.5;
-  
 }
 
 .ulNav {
@@ -118,7 +114,6 @@
   margin-left: 20vw;
 }
 
-
 /* Responsive  */
 
 /* Tablets  */
@@ -127,46 +122,53 @@
     background-image: url("/src/assets/technology/background-technology-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
   }
 
   .fullContainer {
-    height: 100%;
+    width: 100%;
+    margin-top: 0;
   }
 
   .leftContainer {
-    display: flex;
     margin: 0;
-    flex-direction: column;
+    width: 100%;
   }
 
   .title {
-    margin-right: 900px;
+    font-size: 26px;
+    margin-left: 10vw;
+    margin-bottom: 30vh;
+    margin-top: 3vh;
     width: 300px;
   }
-  
+
   .ulNav {
     flex-direction: row;
   }
 
   .ulAndContent {
     flex-direction: column;
+    align-items: center;
   }
 
   .nameAndDescriptionContainer {
     margin: 0;
+    align-items: center;
   }
-  
+
   .description {
-    width: 500px;
+    width: 600px;
   }
 
-  :root {
-    --image-url: {images.landscape}
+  .rightContainer {
+    position: absolute;
+    width: 768px;
+    height: 310px;
+    margin-top: 10vh;
+    margin-left: 0;
   }
-
-  
-
 }
 
 /* Phones  */

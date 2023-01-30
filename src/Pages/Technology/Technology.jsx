@@ -10,6 +10,7 @@ const Technology = () => {
   const { name, images, description } = technology[value];
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
+  //useEffect to make image swap from portrait to landscape
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 1024px)");
     setIsSmallScreen(mq.matches);

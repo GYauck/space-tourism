@@ -24,13 +24,13 @@
 .title {
   color: rgb(98, 89, 86);
   width: fit-content;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .titleSpan {
   color: white;
   font-weight: lighter;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 4.7px;
 }
 
@@ -111,10 +111,11 @@
     width: 100%;
     align-items: center;
     top: 0;
-    
   }
-  
+
   .leftContainer {
+    width: 80vw;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -138,24 +139,20 @@
 
   .name {
     font-size: 36px;
-    text-align: center; 
-    width: 40vw;
+    text-align: center;
+    width: 55vw;
   }
 
   .bio {
-    width: 350px;
+    width: 70vw;
   }
 
   .rightContainer {
-    width:50%;
+    width: 50%;
     height: 50%;
     bottom: 0;
     position: fixed;
-    
   }
-
- 
-
 }
 
 /* Phones  */
