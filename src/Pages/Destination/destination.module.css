@@ -199,4 +199,73 @@
 
 /* Phones  */
 @media only screen and (max-width: 480px) {
+  .background {
+    background-image: url("/src/assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .fullContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+  }
+
+  .rightContainer {
+    width: 100vw;
+  }
+
+  .title {
+    margin: 0;
+    width: 221px;
+    height: 19px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-bottom: 5vh;
+  }
+
+  .planetImg {
+    width: 170px;
+    height: 170px;
+  }
+
+  .ulNav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .ulButton {
+    font-size: 14px;
+  }
+
+  .activeButtom {
+    font-size: 14px;
+  }
+
+  .planetName {
+    font-size: 56px;
+  }
+
+  .pDescription {
+    width: 90vw;
+  }
+
+  .liTravel {
+    font-size: 12px;
+    width: 40vw;
+    align-items: center;
+  }
+
+  .liDistance {
+    font-size: 12px;
+    width: 40vw;
+    align-items: center;
+  }
+
+  .spanDescription {
+    font-size: 24px;
+  }
 }

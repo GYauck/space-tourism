@@ -47,8 +47,17 @@ hr {
   border-bottom: 3px solid white;
 }
 
+.mobileMenu {
+  display: none;
+}
+
+.hamburguerIcon {
+  display: none;
+}
+
 /* Responsive  */
 
+/* Tablets  */
 @media only screen and (max-width: 1024px) {
   .navContainer {
     padding-top: 1vh;
@@ -59,5 +68,50 @@ hr {
   }
 }
 
+/* Phones  */
 @media only screen and (max-width: 480px) {
+
+  .logo {
+    margin-top: 1vh;
+    width: 35px;
+    height: 35px;
+  }
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .hamburguerIcon {
+    display: flex;
+    width: 24px;
+    height: 21px;
+    margin-top: 2vh;
+    margin-right: 5vw;
+    z-index: 5;
+  }
+
+  .mobileMenu {
+    background-color: red;
+  }
+
+  .mobileMenuDisplay {
+    background: rgba(73, 70, 70, 0.986) 50%;
+    height: 100vh;
+    width: 50vw;
+    right: 0;
+    position: absolute;
+    margin-top: 0;
+    z-index: 2;
+    
+  }
+
+  .navText {
+    margin-top: 10vh;
+  }
+
+  
 }
