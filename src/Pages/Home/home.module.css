@@ -70,8 +70,7 @@ body {
 }
 
 .exploreCircle:hover {
-    border-color: grey;
-    
+    box-shadow: 10px 10px 100px grey;
 }
 
 /* Responsive  */
@@ -80,6 +79,10 @@ body {
 @media only screen and (max-width: 1024px) {
     .backgroundHome {
         background-image: url("/src/assets/home/background-home-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
     }
 
     .homeContainer {

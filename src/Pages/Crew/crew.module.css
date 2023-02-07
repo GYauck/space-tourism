@@ -60,6 +60,7 @@
   height: 140px;
   line-height: 1.5;
   margin: 0;
+  text-align: center;
 }
 
 .ulNav {
@@ -145,6 +146,7 @@
 
   .bio {
     width: 70vw;
+    text-align: center;
   }
 
   .rightContainer {
@@ -157,4 +159,45 @@
 
 /* Phones  */
 @media only screen and (max-width: 480px) {
+  .background {
+    background-image: url("/src/assets/crew/background-crew-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .title {
+    margin-right: 0;
+    margin-bottom: 40vh;
+    font-size: 16px;
+    order: -2;
+  }
+
+  .ulNav {
+    order: -1;
+    padding: 0;
+  }
+
+  .role {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 24px;
+    width: 80vw;
+  }
+
+  .bio {
+    width: 90vw;
+    text-align: center;
+  }
+
+  .rightContainer {
+    width: 327px;
+    height: 223px;
+    position: absolute;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+  }
 }

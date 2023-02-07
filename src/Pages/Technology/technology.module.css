@@ -173,4 +173,65 @@
 
 /* Phones  */
 @media only screen and (max-width: 480px) {
+  .background {
+    background-image: url("/src/assets/technology/background-technology-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .leftContainer {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 50%;
+    height: 50%;
+  }
+
+  .rightContainer {
+    width: 375px;
+    height: 170px;
+  }
+
+  .ulNav {
+    width: 100vw;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .ulButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .activeButtom {
+    width: 40px;
+    height: 40px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+  }
+  
+  .name {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 12px;
+    width: 90vw;
+    margin-bottom: 0;
+  }
+
+  .ulAndContent {
+    width: 100vw;
+    margin: 0;
+  }
 }
