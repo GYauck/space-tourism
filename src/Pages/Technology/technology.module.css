@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-left: 20vh;
+  margin-left: 15vh;
 }
 
 .title {
@@ -111,7 +111,9 @@
   width: 515px;
   height: 527px;
   display: flex;
-  margin-left: 20vw;
+  /* margin-left: 2vw; */
+  position: absolute;
+  right: 0;
 }
 
 /* Responsive  */
@@ -164,10 +166,12 @@
 
   .rightContainer {
     position: absolute;
-    width: 768px;
+    /* width: 768px; */
+    width: 100vw;
     height: 310px;
     margin-top: 10vh;
     margin-left: 0;
+    justify-content: center;
   }
 }
 
@@ -195,7 +199,8 @@
   }
 
   .rightContainer {
-    width: 375px;
+    /* width: 375px; */
+    width: 100vw;
     height: 170px;
   }
 

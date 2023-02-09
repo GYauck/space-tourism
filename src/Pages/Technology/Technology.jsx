@@ -26,7 +26,6 @@ const Technology = () => {
 
   const handleClick = (event) => {
     event.preventDefault();
-    console.log(event.target.id);
     setActive(event.target.id);
   };
 

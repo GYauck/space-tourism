@@ -7,9 +7,7 @@
 
 .fullContainer {
   display: flex;
-  /* align-items: center; */
   margin-top: 10vh;
-  position: fixed;
   bottom: 0;
   height: 712px;
 }
@@ -17,8 +15,9 @@
 .leftContainer {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-left: 300px;
+  width: 55%;
+  /* margin-left: 300px; */
+  align-items: center;
 }
 
 .title {
@@ -56,11 +55,11 @@
 
 .bio {
   color: #d0d6f9;
-  width: 50%;
+  width: 30vw;
   height: 140px;
   line-height: 1.5;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .ulNav {
@@ -91,7 +90,7 @@
 
 /* Right side */
 .rightContainer {
-  width: 50%;
+  width: 45%;
   display: flex;
 }
 
@@ -112,6 +111,7 @@
     width: 100%;
     align-items: center;
     top: 0;
+    position: fixed;
   }
 
   .leftContainer {
